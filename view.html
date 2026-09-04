@@ -1,0 +1,35 @@
+<!doctype html>
+<html>
+  <head>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/view.css" />
+    <link rel="stylesheet" href="css/mediaviewer.css" />
+  </head>
+
+  <body>
+    <div id="navbar"></div>
+    <h1 id="title"></h1>
+
+    <label for="sort">Sort by:</label>
+
+    <select id="sort" name="sort">
+      <option value="uploaded">Date Uploaded</option>
+      <option value="created">Date Created</option>
+      <option value="size">Size</option>
+    </select>
+
+    <div id="thumbnails"></div>
+    <div id="modalContainer"></div>
+
+    <script src="js/main.js"></script>
+    <script src="js/config.js"></script>
+    <script src="js/navbar.js"></script>
+    <script src="https://unpkg.com/@panzoom/panzoom/dist/panzoom.min.js"></script>
+    <script src="https://unpkg.com/exifr/dist/full.umd.js"></script>
+
+    <script src="js/file-utils.js"></script>
+
+    <script src="js/mediaviewer.js"></script>
+    <script src="js/view.js"></script>
+  </body>
+</html>

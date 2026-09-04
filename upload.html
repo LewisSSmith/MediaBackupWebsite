@@ -1,0 +1,30 @@
+<!doctype html>
+<html>
+  <head>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/upload.css" />
+  </head>
+
+  <body>
+    <div id="navbar"></div>
+    <h1 id="title"></h1>
+    <form id="uploadForm">
+      <input type="file" id="fileInput" required multiple />
+
+      <button type="submit">Upload</button>
+    </form>
+
+    <div id="drop-zone" class="drop-zone">
+      <p>Drag & drop files here, or click to browse</p>
+      <input type="file" id="file-input" multiple hidden />
+    </div>
+
+    <label for="upload-bar" id="fileUploadStatus">Number files uploaded</label>
+    <progress id="upload-bar" max="1"></progress>
+
+    <script src="js/main.js"></script>
+    <script src="js/config.js"></script>
+    <script src="js/navbar.js"></script>
+    <script src="js/upload.js"></script>
+  </body>
+</html>
